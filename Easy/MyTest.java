@@ -1,8 +1,11 @@
+import java.util.HashMap;
+
 class MyTest {
     public static void main(String[] args) {
-        String x = "12fdsff sdzfds 3 45";
-        x.charAt(index)
-        // x = x.replaceAll("[^A-Za-z0-9]","");
-        System.out.println(x.reverse());
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int x = 65;
+        String y = "";
+        System.out.println((char) x);
+        System.out.println(y);
     }
 }
