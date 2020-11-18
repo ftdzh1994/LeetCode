@@ -32,7 +32,7 @@ class Solution {
             int curr_size = queue.size();
             while(curr_size != 0){
                 curr = queue.poll();
-                curr.next = curr_size <= 1 ? null : queue.peek();
+                curr.next = curr_size == 1 ? null : queue.peek();
                 if(curr.left != null) queue.offer(curr.left);
                 if(curr.right != null) queue.offer(curr.right);
                 curr_size --;
