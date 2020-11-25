@@ -8,35 +8,35 @@
  */
 class Solution {
     public ListNode reverseBetween(ListNode head, int m, int n) {
-        ListNode prev = new ListNode(0, head);
-        ListNode reverseTail = null, reverseHead = null, curr = prev, beforeReverse = null;
-        int index = 0;
-        while(curr !=null ) {
-            if ( index = m-1) {
-                beforeReverse = curr;
-            }
-            if (m <= index || index <= n) {
-                if (index == m) {
-                    prev = null;
-                    reverseTail = reverseTail = curr;
-                } else {
-                    reverseTail.next = curr;
-                    reverseTail = curr;
-                }
+        if (head == null) return head;;
 
-                if(index == n){
-                    reverseTail.next = 
-                }
-
-
-            }
-
-
-
-
-
-            index = index + 1;
-
+        // Move to the (m-1)th node
+        ListNode prev = null, curr = head;
+        while(m > 1){
+            prev = curr;
+            curr = curr.next;
+            m--;
+            n--;
         }
+
+        // Recorder some information for later Reconnections
+        // reverse node from m to n
+        ListNode con = prev, tail = curr, third = null;
+        while(n > 0){
+            third = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = third;
+            n--;
+        }
+
+        // Reconnect the old list and reversed list
+        if (con != null) {
+            con.next = prev;
+        } else {
+            head = prev;
+        } 
+        tail.next = curr;
+        return head;
     }
 }
