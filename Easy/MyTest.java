@@ -13,14 +13,13 @@ class MyTest {
         StringBuilder path  = new StringBuilder();
         path.append('a');
         path.append('b');
-        System.out.println(path.length());
+        // System.out.println(path.length());
         ArrayList<Integer> phone;
         int [] x  = new int[] {1,2,3};
         Deque<Integer> j = new LinkedList<Integer>();
-        
-        
-        boolean [] z = new boolean[4];
-        System.out.println(z[1]);
+        int [][] xz = new int [2][3];
+        System.out.println(xz.length);
+        System.out.println(xz[0].length);
 
     }
 }
