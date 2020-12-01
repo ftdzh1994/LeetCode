@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Deque;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +16,13 @@ class MyTest {
         path.append('b');
         // System.out.println(path.length());
         List<Integer> phone = new ArrayList<Integer>();
+        HashSet<Integer> set = new HashSet<Integer>();
+        List<String> res = new ArrayList<String>();
+        String tes = "sdf";
+        tes.equals(anObject)
+
+        int x[] = new int[] {1,23};
+        
         phone.add(1);
         phone.add(2);
         phone.add(3);
@@ -22,7 +30,6 @@ class MyTest {
         for (int i : phone) {
             System.out.println(i);
         }
-
     }
 
     public static void swap(int[] nums, int i, int j) {

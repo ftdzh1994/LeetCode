@@ -13,7 +13,7 @@ class Solution {
                 max = Math.max(max, product[i][0]);
             }
         }
-        return max;
+        return max; 
     }
 
     public int[] update(int x, int y, int z){
