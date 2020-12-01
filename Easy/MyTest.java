@@ -14,12 +14,20 @@ class MyTest {
         path.append('a');
         path.append('b');
         // System.out.println(path.length());
-        ArrayList<Integer> phone;
-        int [] x  = new int[] {1,2,3};
-        Deque<Integer> j = new LinkedList<Integer>();
-        int [][] xz = new int [2][3];
-        System.out.println(xz.length);
-        System.out.println(xz[0].length);
+        List<Integer> phone = new ArrayList<Integer>();
+        phone.add(1);
+        phone.add(2);
+        phone.add(3);
+        phone.set(0, 4);
+        for (int i : phone) {
+            System.out.println(i);
+        }
 
+    }
+
+    public static void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 }
