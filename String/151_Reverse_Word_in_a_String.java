@@ -21,7 +21,7 @@ class Solution {
         }
         if (!word.equals("")) {
             ans = ans + (ans.equals("") ? "" : " ") + word;
-        }
+        } 
         return ans;
     }
 }
